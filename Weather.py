@@ -60,21 +60,7 @@ def callback(call):
 
         bot.reply_to(call.message, f"Weather in {call.data}: {degree}, {season}")
 
-    # match call.data:
-    #     case "Tashkent":
-    #         bot.reply_to(call.message, f"Weather in Tashkent: {degree}, {season}")
-    #
-    #     case "New york":
-    #         bot.reply_to(call.message, f"Weather in New york: {degree}, {season}")
-    #
-    #     case "Canada":
-    #         bot.reply_to(call.message, f"Weather in Canada: {degree}, {season}")
-    #         # bot.register_next_step_handler(call.message, weather)
-    #
-    #     case "Other":
-    #         bot.send_message(call.message.chat.id, "Here you can write your own city: ")
-    #         bot.register_next_step_handler(call.message, handle_other_city_input)
-
+   
 
 def handle_other_city_input(message):
     user_input = message.text
